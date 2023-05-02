@@ -58,6 +58,7 @@ steps:
     projects: '**/*.csproj'
     publishWebProjects: false
     arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)'
+    minorVersion: '1'
     zipAfterPublish: true
 
 - task: PublishBuildArtifacts@1
